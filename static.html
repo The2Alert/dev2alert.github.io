@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Управление заказами - Интернет-магазин</title>
+        <link href="./images/icon.png" rel="shortcut icon" type="image/png" />
+        <link href="./styles/index.css" rel="stylesheet" />
+        <link href="./styles/header.css" rel="stylesheet" />
+        <link href="./styles/main.css" rel="stylesheet" />
+        <link href="./styles/footer.css" rel="stylesheet" />
+    </head>
+    <body>
+        <header>
+            <div class="left">
+                <span class="logo"></span>
+                <nav>
+                    <a href="#">Главная</a>
+                    <a href="#basket">Корзина</a>
+                    <a href="#favorites">Избранное</a>
+                </nav>
+            </div>
+            <div class="right">
+                <nav>
+                    <a class="signup" href="#signup">Регистрация</a>
+                    <a class="signin" href="#signin">Войти</a>
+                </nav>
+            </div>
+        </header>
+        <main>
+            <h1 class="title">Управление заказами <span class="count">(1)</span></h1>
+            <div class="orders">
+                <div class="order" id="0">
+                    <span class="title">Заказ №1</span>
+                    <div class="content">
+                        <div class="param">
+                            <span class="name title">Заказчик:</span>
+                            <span class="value user" id="0">
+                                <img class="photo" src="./data/users/0/photo.jpg" />
+                                <span class="namefamily">Артём Потыкун</span>
+                            </span>
+                        </div>
+                        <div class="param">
+                            <span class="name title">Дата и время заказа:</span>
+                            <span class="value">18.05.2021, 11:24.</span>
+                        </div>
+                        <div class="products">
+                            <span class="title">Товары:</span>
+                            <div class="list">
+                                <div class="product" id="0">
+                                    <span class="left">
+                                        <div class="photo">
+                                            <img src="./data/products/0/photo.jpg" />
+                                        </div>
+                                        <div class="name">Пуховая куртка VETEMENTS</div>
+                                        <div class="params">
+                                            <span class="param color">
+                                                <span class="name">Цвет:</span>
+                                                <span class="view" style="--color: #8B670A;"></span>
+                                            </span>
+                                            <span class="param size">
+                                                <span class="name">Размер:</span>
+                                                <span class="view">XL</span>
+                                            </span>
+                                        </div>
+                                    </span>
+                                    <span class="right">
+                                        <div class="price">181 500<span class="currency">₽</span></div>
+                                        <div class="param count">
+                                            <span class="name">Кол-во:</span>
+                                            <span class="value">2 шт.</span>
+                                        </div>
+                                    </span>
+                                </div>
+                                <div class="product" id="1">
+                                    <span class="left">
+                                        <div class="photo">
+                                            <img src="./images/product-photo-default.png" />
+                                        </div>
+                                        <div class="name">Пуховая куртка VETEMENTS</div>
+                                        <div class="params">
+                                            <span class="param color">
+                                                <span class="name">Цвет:</span>
+                                                <span class="view" style="--color: #8B670A;"></span>
+                                            </span>
+                                            <span class="param size">
+                                                <span class="name">Размер:</span>
+                                                <span class="view">XL</span>
+                                            </span>
+                                        </div>
+                                    </span>
+                                    <span class="right">
+                                        <div class="price">181 500<span class="currency">₽</span></div>
+                                        <div class="param count">
+                                            <span class="name">Кол-во:</span>
+                                            <span class="value">2 шт.</span>
+                                        </div>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="param">
+                            <span class="name title">Итого:</span>
+                            <span class="value">
+                                <span class="price">363 000<span class="currency">₽</span></span>.
+                            </span>
+                        </div>
+                        <div class="param">
+                            <span class="name title">Статус:</span>
+                            <span class="value select">
+                                <select>
+                                    <option>Новый</option>
+                                    <option>Отменён</option>
+                                    <option>Отклонён</option>
+                                    <option>В пути</option>
+                                    <option>Завершён</option>
+                                </select>
+                                <span class="view">Новый</span>.
+                            </span>
+                        </div>
+                        <div class="offer h-buttons">
+                            <button class="accept button type-1">
+                                <img src="./images/order-accept.png" />
+                                Принять
+                            </button>
+                            <button class="reject button type-2">
+                                <img src="./images/order-reject.png" />
+                                Отклонить
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <footer>
+            by
+            <a class="link" href="https://github.com/dev2alert" target="_blank">
+                <img class="icon" src="./images/github.png" />
+                Dev2alert
+            </a>
+        </footer>
+    </body>
+</html>

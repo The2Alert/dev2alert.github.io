@@ -1,0 +1,30 @@
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60px;
+    font: normal 16px "ProximaNova Regular";
+    color: #373737;
+}
+
+footer > .link {
+    display: inline-flex;
+    align-items: center;
+    margin-left: 8px;
+    text-decoration: none;
+    font: normal 16px "ProximaNova Bold";
+    color: inherit;
+}
+
+footer > .link:focus {
+    text-decoration: underline;
+}
+
+footer > .link > .logo {
+    width: 20px;
+    height: 20px;
+}
+
+footer > .link > .icon:first-child {
+    margin-right: 10px;
+}
